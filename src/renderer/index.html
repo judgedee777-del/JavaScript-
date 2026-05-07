@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>电商搜索工具</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <h1 class="header-title">电商搜索</h1>
+      <p class="header-subtitle">Multi-Platform E-commerce Search</p>
+    </header>
+
+    <!-- 平台标签 -->
+    <div class="platform-tabs">
+      <button class="tab active" data-platform="jd">京东</button>
+      <button class="tab" data-platform="tb">淘宝</button>
+      <button class="tab" data-platform="pdd">拼多多</button>
+    </div>
+
+    <!-- 搜索栏 -->
+    <div class="search-bar">
+      <input type="text" id="keyword" placeholder="输入商品名称、品牌..." />
+      <button id="searchBtn">搜索</button>
+    </div>
+
+    <!-- 状态栏 -->
+    <div class="status-bar">
+      <span class="platform-indicator" id="platformIndicator">京东</span>
+      <span id="resultCount">0 个结果</span>
+    </div>
+
+    <!-- 商品列表 -->
+    <div class="product-list" id="productList">
+      <div class="empty-state">
+        <svg class="empty-state-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <p>选择平台并输入关键词开始搜索</p>
+      </div>
+    </div>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>

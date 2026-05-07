@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh repo:*)",
+      "Bash(cp \"D:/OneDrive/PyJScode/JS逆向/电商实战/京东h5st/手写/env.js\" \"D:/OneDrive/PyJScode/电商搜索工具/sources/jd/\")",
+      "Bash(cp \"D:/OneDrive/PyJScode/JS逆向/电商实战/京东h5st/手写/produre.js\" \"D:/OneDrive/PyJScode/电商搜索工具/sources/jd/\")",
+      "Bash(cp \"D:/OneDrive/PyJScode/JS逆向/电商实战/京东h5st/手写/jd_search.py\" \"D:/OneDrive/PyJScode/电商搜索工具/sources/jd/\")",
+      "Bash(cp \"D:/OneDrive/PyJScode/JS逆向/电商实战/拼多多/env.js\" \"D:/OneDrive/PyJScode/电商搜索工具/sources/pdd/\")",
+      "Bash(cp \"D:/OneDrive/PyJScode/JS逆向/电商实战/拼多多/pack.js\" \"D:/OneDrive/PyJScode/电商搜索工具/sources/pdd/\")",
+      "Bash(cp \"D:/OneDrive/PyJScode/JS逆向/电商实战/拼多多/pdd_search.py\" \"D:/OneDrive/PyJScode/电商搜索工具/sources/pdd/\")",
+      "Bash(cp \"D:/OneDrive/PyJScode/JS逆向/电商实战/淘宝/分析.js\" \"D:/OneDrive/PyJScode/电商搜索工具/sources/tb/\")",
+      "Bash(cp \"D:/OneDrive/PyJScode/JS逆向/电商实战/淘宝/tb_search.py\" \"D:/OneDrive/PyJScode/电商搜索工具/sources/tb/\")",
+      "Bash(npm start:*)",
+      "Bash(npm install:*)",
+      "Bash(npm config:*)",
+      "Bash(node -e \"const s = require\\('./src/main/search'\\); s.search\\('相机', 'jd'\\).then\\(r => console.log\\(JSON.stringify\\(r\\).substring\\(0, 500\\)\\)\\).catch\\(e => console.error\\('Error:', e.message\\)\\)\")",
+      "Bash(python sources/jd/jd_search.py 相机)",
+      "Bash(node -e \"const s = require\\('./src/main/search'\\); s.search\\('相机', 'jd'\\).then\\(r => console.log\\('code:', r.code, 'count:', r.data?.resultCount || r.data?.data?.resultCount\\)\\).catch\\(e => console.error\\(e\\)\\)\")",
+      "Bash(node -e \"const s = require\\('./src/main/search'\\); s.search\\('相机', 'jd'\\).then\\(r => { console.log\\('code:', r.code\\); console.log\\('total:', r.data?.resultCount\\); console.log\\('items:', r.extracted?.length || r.data?.wareList?.length\\); }\\).catch\\(e => console.error\\(e\\)\\)\")",
+      "Bash(python sources/pdd/pdd_search.py 相机)",
+      "Bash(node -e \"const s = require\\('./src/main/search'\\); s.search\\('相机', 'jd'\\).then\\(r => { console.log\\('京东 - code:', r.code, 'items:', r.extracted?.length || r.data?.wareList?.length\\); }\\).catch\\(e => console.error\\(e\\)\\)\")"
+    ]
+  }
+}

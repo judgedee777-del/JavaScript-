@@ -1,0 +1,10 @@
+{
+  "appId": "com.jd.search",
+  "productName": "京东搜索工具",
+  "directories": {
+    "output": "dist"
+  },
+  "win": {
+    "target": "portable"
+  }
+}

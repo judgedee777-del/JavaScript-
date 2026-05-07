@@ -1,0 +1,15 @@
+{
+  "name": "ecommerce-search-tool",
+  "version": "1.0.0",
+  "description": "电商搜索工具 - 支持京东、淘宝、拼多多",
+  "main": "src/main/index.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.0.0"
+  },
+  "dependencies": {}
+}
