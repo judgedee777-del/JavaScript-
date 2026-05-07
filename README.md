@@ -1,5 +1,7 @@
 # 电商搜索工具
 
+![App Screenshot](https://minimax-algeng-chat-tts.oss-cn-wulanchabu.aliyuncs.com/ccv2%2F2026-05-07%2FMiniMax-M2.7-highspeed%2F2036601842686763899%2F2368fc2797159ab97460b2d68b14e27336ad4275ab495bd8fb22791da6643b5c..png?Expires=1778227089&OSSAccessKeyId=LTAI5tGLnRTkBjLuYPjNcKQ8&Signature=o1dGd1vTkPwKMiJ4iGVOmEIpNjA%3D)
+
 跨平台电商商品搜索工具，支持京东、淘宝、拼多多三大电商平台。
 
 ## 功能特性
@@ -35,43 +37,6 @@
 └── userData/            # 用户数据目录
 ```
 
-## 快速开始
-
-### 1. 安装依赖
-
-```bash
-npm install
-```
-
-### 2. 配置平台签名文件
-
-从原始分析目录复制以下文件到 `sources/` 对应目录：
-
-**京东 (sources/jd/)**
-- `env.js`
-- `produre.js`
-
-**淘宝 (sources/tb/)**
-- `分析.js`
-
-**拼多多 (sources/pdd/)**
-- `env.js`
-- `pack.js`
-
-> 注意：这些文件包含敏感签名逻辑，请勿提交到仓库
-
-### 3. 启动应用
-
-```bash
-npm start
-```
-
-### 4. 打包构建
-
-```bash
-npm run build
-```
-
 ## 平台说明
 
 | 平台 | 状态 | 说明 |
@@ -80,11 +45,9 @@ npm run build
 | 淘宝 | ✅ 可用 | 内置 cookie，需定期更新 |
 | 拼多多 | ⚠️ 需配置 | anti_content 动态生成，需配置环境 |
 
-## 注意事项
+## 配置说明
 
-- `sources/` 目录下的文件包含敏感信息，已通过 `.gitignore` 排除
-- `userData/` 目录用于存储用户数据，不会上传到仓库
-- 各平台 cookie 会有时效性，如搜索失败请更新对应平台的 cookie
+`sources/` 目录下的文件包含敏感签名逻辑，请勿提交到仓库。
 
 ## License
 
